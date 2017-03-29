@@ -30,20 +30,6 @@ request('http://hz.58.com/chuzu/', (err, req) => {
      console.log('位置:'+address+'\n'+'房型:'+desc+'价格:'+money)
      
     })
-
-    // $('.list.list_preferential').each((i, item) => {
-    //   var $title = $('.itemName a', item)
-    //   var url = $title.attr('href')
-    //   var title = $title.removeTagText().trim()
-
-    //   var hl = $title.children().text().trim()
-    //   var img = $('img', item).attr('src')
-    //   var desc = $('.lrInfo', item).html().trim()
-    //   desc = desc.replace(/<a\b.+?>阅读全文<\/a>/g, '')
-    //   var mall = $('.botPart a.mall', item).text().trim()
-
-    //   console.log({title, hl, url, img, desc, mall})
-    // })
   }
 })
 /**
@@ -55,7 +41,7 @@ app.set('port', port);
 
 /**
  * Create HTTP server.
- */
+ */ 
 
 var server = http.createServer(app);
 
